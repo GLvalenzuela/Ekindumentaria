@@ -1,0 +1,506 @@
+.tableforma table {
+    margin: 0% auto;
+}
+
+ul{
+    list-style: none;
+    text-align: center;
+    margin-top: 0%;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+.fondosuperior {
+    background-color: rgba(0, 0, 0, 0.9);
+}
+.letrasblancas {
+    text-decoration-color: aliceblue;
+    display: inline block;
+    
+}
+.titulo {
+    font-family: 'Marcador permanente', cursiva;
+}
+a {
+    color: rgb(238, 125, 32);
+    text-decoration: none;
+    display: inline-block;
+    padding: 10px;    
+}
+h1 {
+    color: rgb(241, 45, 45);
+    text-align: center;
+
+}
+.imagenzapatilla {
+    display:flex;
+    justify-content: center;
+}
+.lista {
+    list-style: square;
+    text-align: left;
+    margin-top: 0%;
+    border-style: solid;
+    background-color: white;
+}
+
+footer {
+    background-color: black;
+    
+}
+
+.listapie {
+    list-style: none;
+    text-align: left;
+    margin-top: 0%;
+    color: aliceblue;
+}
+
+h2 {
+    color: aliceblue;
+}
+h3 { 
+    color: aliceblue;
+}
+
+.colormedio {
+    background-color: rgb(109, 152, 134);
+    
+}
+.titulolista {
+    color: black;
+    border-style: solid;
+    border-bottom: 1px;
+    border-color: rgb(0, 0, 0);
+    background-color: rgb(255, 253, 253);
+    text-align: left;
+    }
+
+.flex {
+    display: flex;
+    justify-content: space-between;
+}
+
+.buscador {
+    border-radius: 20px;
+    border-color: firebrick;
+    text-align: center;
+    margin-top: 10px;
+    margin-right: 200px;
+}
+
+.margeninicio {
+    margin-top: 30px;
+    margin-right: 10px;
+}
+    
+.imagenlogo {
+    display:flex;
+    justify-content: center;
+}
+.navegacion {
+    display: inline-block;
+    display: flex;
+    
+}
+
+.buscador1 {
+    border-radius: 20px;
+    border-color: firebrick;
+    text-align: center;
+   margin-right: 220px;
+}
+
+.colorfondo {
+    background-color: black;
+}
+
+.cajainicio {
+    text-align: center;
+}
+
+.fondoiniciar {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    background-image:url(../img/fondoinicio3.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    box-sizing: border-box;
+}
+
+.contenedor {
+    width: 100%;
+    padding: 15px;
+    text-align: center;
+}
+
+.formulario {
+    background-color: aliceblue;
+    margin: auto;
+    padding: 3px;
+    width: 500px;
+    margin-top: 120px;
+    margin-bottom: 50px;
+    border-radius: 9px;
+
+}
+
+.tituloiniciar {
+    text-align: center;
+    color: darkslategrey;
+    font-size: 40px;
+}
+.inputcontenedor {
+    margin-bottom: 15px;
+    border: 1px solid black;
+    font-size: 20px;
+    width: 90%;
+    padding: 10px;
+}
+.boton {
+    border: none;
+    width: 95%;
+    color: white;
+    font-size: 20px;
+    background-color: darkslategrey;
+    padding: 15px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+#genero {
+    color: darkslategrey;
+}
+
+.card1 {
+    background-color: black;
+    width: 18%;
+    height: 320px;
+    margin-bottom: 30px;
+    padding: 20px 5px;
+    margin-left: 10px;
+    border-radius: 10px;
+}
+
+.card2 {
+    background-color: black;
+    width: 18%;
+    height: 320px;
+    margin-bottom: 30px;
+    padding: 20px 5px;
+    margin-left: 10px;
+    border-radius: 10px;
+}
+
+.card3 {
+    background-color: black;
+    width: 18%;
+    height: 320px;
+    margin-bottom: 30px;
+    padding: 20px 5px;
+    margin-left: 10px;
+    border-radius: 10px;
+}
+
+.card4 {
+    background-color: black;
+    width: 18%;
+    height: 320px;
+    margin-bottom: 30px;
+    padding: 20px 5px;
+    margin-left: 10px;
+    border-radius: 10px;
+}
+
+.card5 {
+    background-color: black;
+    width: 18%;
+    height: 320px;
+    margin-bottom: 30px;
+    padding: 20px 5px;
+    margin-left: 10px;
+    border-radius: 10px;
+}
+
+.card6 {
+    background-color: black;
+    width: 18%;
+    height: 320px;
+    margin-bottom: 30px;
+    padding: 20px 5px;
+    margin-left: 10px;
+    border-radius: 10px;
+}
+
+.card7 {
+    background-color: black;
+    width: 18%;
+    height: 320px;
+    margin-bottom: 30px;
+    padding: 20px 5px;
+    margin-left: 10px;
+    border-radius: 10px;
+}
+
+.card8 {
+    background-color: black;
+    width: 18%;
+    height: 320px;
+    margin-bottom: 30px;
+    padding: 20px 5px;
+    margin-left: 10px;
+    border-radius: 10px;
+}
+
+.card9 {
+    background-color: black;
+    width: 18%;
+    height: 320px;
+    margin-bottom: 30px;
+    padding: 20px 5px;
+    margin-left: 10px;
+    border-radius: 10px;
+    
+}
+
+.card10 {
+    background-color: black;
+    width: 18%;
+    height: 320px;
+    margin-bottom: 30px;
+    padding: 20px 5px;
+    margin-left: 10px;
+    border-radius: 10px;
+}
+
+.card11 {
+    background-color: black;
+    width: 18%;
+    height: 320px;
+    margin-bottom: 30px;
+    padding: 20px 5px;
+    margin-left: 10px;
+    border-radius: 10px;
+}
+
+.card12 {
+    background-color: black;
+    width: 18%;
+    height: 320px;
+    margin-bottom: 30px;
+    padding: 20px 5px;
+    margin-left: 10px;
+    border-radius: 10px;
+}
+
+.card13 {
+    background-color: black;
+    width: 18%;
+    height: 320px;
+    margin-bottom: 30px;
+    padding: 20px 5px;
+    margin-left: 10px;
+    border-radius: 10px;
+}
+
+.card14 {
+    background-color: black;
+    width: 18%;
+    height: 320px;
+    margin-bottom: 30px;
+    padding: 20px 5px;
+    margin-left: 10px;
+    border-radius: 10px;
+}
+
+.card15 {
+    background-color: black;
+    width: 18%;
+    height: 320px;
+    margin-bottom: 30px;
+    padding: 20px 5px;
+    margin-left: 10px;
+    border-radius: 10px;
+}
+
+.cardfiltros {
+    width: 35%;
+    
+}
+.text {
+    text-align: center;
+    color: white;
+}
+.imagenproducto {
+    display: block;
+    margin: 0 auto;
+}
+.contenedorhombre {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 10px;
+
+}
+.contenedorproductosh {
+    display: inline-flex;
+    margin-top: 15px;
+}
+
+.contenedorpie {
+    display: inline-block;
+    margin-top: 0px;
+    margin-left: 10px;
+    
+}
+
+.contenedorpie1 {
+    display: inline-block;
+    margin-top: 10px;
+    margin-left: 200px;
+    margin-right: 200px;
+}
+
+.contenedorpie2 {
+    display: inline-block;
+    margin-top: 20px;
+    margin-left: 150px;
+    
+}
+
+.listapie li {
+    margin-bottom: 20px;
+}
+
+.mail{
+    color: white;
+}
+
+.containerimg {
+    width: 300px;
+    height: 300px;
+    overflow: hidden;
+    position: relative;
+    border-radius: 20px;
+    box-shadow: 5px 8px 12px black;
+    margin: 200 auto;
+    display: inline-flex;
+    justify-content: space-between;
+    padding-left: 50px;
+    margin-left: 50px;
+}
+
+.containerimg1 {
+    width: 300px;
+    height: 300px;
+    overflow: hidden;
+    position: relative;
+    border-radius: 20px;
+    box-shadow: 5px 8px 12px black;
+    margin: 200 auto;
+    display: inline-flex;
+    justify-content: space-between;
+    padding-left: 50px;
+    margin-left: 50px;
+}
+
+.containerimg2 {
+    width: 300px;
+    height: 300px;
+    overflow: hidden;
+    position: relative;
+    border-radius: 20px;
+    box-shadow: 5px 8px 12px black;
+    margin: 200 auto;
+    display: inline-flex;
+    justify-content: space-between;
+    padding-left: 50px;
+    margin-left: 50px;
+}
+
+.containerimg img {
+    width: 100%;
+    height: 100%;
+}
+
+.imagin {
+    
+    display: inline;
+}
+
+.botoncarrito {
+    background-color: darkslategrey;
+    margin-left: 50px;
+    border-radius: 10px;
+    cursor: pointer;
+    color: white;
+}
+    
+.botoncarrito:hover {
+    background-color: greenyellow;
+}
+
+.lista li {
+    text-align: left;
+    margin-left: 0%;
+    margin-top: 5px;
+
+}
+.navegacion li:hover {
+     background-color: white;
+    }
+
+.containerimg4 {
+        width: 300px;
+        height: 300px;
+        overflow: hidden;
+        position: relative;
+        border-radius: 20px;
+        box-shadow: 5px 8px 12px black;
+        margin: auto;
+        display: inline-flex;
+        justify-content: space-between;
+        
+    } 
+
+    .historia p {
+        font-size: 20px;
+        font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+        color: rgb(255, 255, 255);
+    }
+    .historia h2 {
+        font-size: 30px;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    }
+.nosotros {
+    display: flex;
+}
+.historia {
+    width: 100%;
+    height: 200px;
+    margin-bottom: 20px;
+}
+
+.containerimg5 {
+    width: 400px;
+    height: 300px;
+    overflow: hidden;
+    position: relative;
+    border-radius: 20px;
+    box-shadow: 5px 8px 12px black;
+    margin: auto;
+    display: inline-flex;
+    
+    
+} 
+
+.gridcontainer {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 400px 400px;
+    
+}
+
+.fondoiniciar h1 {
+    font-size: 50px; 
+    font-family: Arial, Helvetica, sans-serif;
+    color: orangered;
+}
