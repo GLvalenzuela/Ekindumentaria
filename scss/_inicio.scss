@@ -1,0 +1,30 @@
+@mixin contimg {
+    width: 200px;
+    height: 200px;
+    overflow: hidden;
+    position: relative;
+    border-radius: 20px;
+    box-shadow: 5px 8px 12px black;
+    margin: 200 auto;
+}
+
+@for $i from 1 to 4 {
+    .containerimg#{$i}{
+        @include contimg;
+    }  
+}
+
+.containerimg1 img {
+    width: 100%;
+    height: 100%;
+}
+
+.containerimg2 img {
+    width: 100%;
+    height: 100%;
+}
+
+.containerimg3 img {
+    width: 100%;
+    height: 100%;
+}
