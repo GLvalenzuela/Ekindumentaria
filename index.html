@@ -4,8 +4,11 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="ropa, moda, remera, zapatillas, gorras, gorros, buzos, pantalon, nike, adidas, levis, tienda, comprar, cutal co, plaza huincul, hombre, mujer, niños, baratas, calidad">
+    <meta name="description" content="Somos una tienda multimarcas especializada en lo ultimo de moda para todas las personas">
     <title>Ekindumentaria</title>
     <link rel="shortcut icon" href="img/favico" type="image/x-icon">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="preconectar" href="https://fonts.googleapis.com">
     <link rel="preconectar" href="https://fonts.gstatic.com" crossorigin>
     <link href="https: //fonts.googleapis.com/css2? family= Bangers & family= Marcador+permanente & display=swap" rel="hoja de estilo">
@@ -47,9 +50,14 @@
 <body class="finicio">
         
     <div class="cuerpoinicio">
-        <div class="carrusel">
 
-            <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+        <div class="portadaini">
+            <img src="img/urban.jpg" alt="imagenportada">
+        </div>
+
+        <h2 class="mark" data-aos="fade-down"> Marcas</h2>
+
+            <div id="carouselExampleControls" class="carousel slide carrusel" data-aos="fade-down" data-bs-ride="carousel">
                 <div class="carousel-inner">
                 <div class="carousel-item active">
                     <img src="img/adidaspor.jpg" class="d-block" alt="imagenpersona">
@@ -73,9 +81,8 @@
                 <span class="visually-hidden">Next</span>
                 </button>
             </div>
-        </div>
 
-    <section class="novedades1">
+    <section class="novedades1" data-aos="fade-down">
 
         <h2>
         Novedades
@@ -126,7 +133,7 @@
 
     </section>
 
-    <section class="sueño">
+    <section class="sueño" data-aos="fade-down">
         <div class="card portada1 mb-3">
             <div class="row g-0">
             <div class="col-md-4">
@@ -142,7 +149,7 @@
     </section>
 
 
-    <section class="imagin">
+    <section class="imagin" data-aos="fade-down">
 
         <div class="containerimg">
             <img src="img/hombreinicio.jpg" alt="hombreinicio" width="300px">
@@ -167,6 +174,13 @@
     </section>    
 </div>  
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+    AOS.init({
+        duration: 3000
+    }
+    );
+</script>
 </body>
 
 <footer>
@@ -179,7 +193,7 @@
     <div class="mail">
         <label for="e-mail">E-mail</label class="mail">
         <input type="email" id="e-mail" required placeholder="ingresa tu e-mail">
-        <input type="submit" value="Suscribirse">
+        <input type="submit" value="Suscribirse" class="botonsup">
     </div>
 
     <h3>Seguinos</h3>

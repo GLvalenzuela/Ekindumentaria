@@ -1,6 +1,16 @@
+/*barra de inicio*/
+.fondosuperior {
+    width: 90%;
+    max-width: 1000px;
+    margin: auto;
+    overflow: hidden;
+    background-color: rgba(0, 0, 0, 0.9);
+}
 .flex {
     display: flex;
     justify-content: space-between;
+    margin-bottom: 3rem;
+
     .navegacion {
         display: inline-block;
         display: flex; 
@@ -55,4 +65,96 @@
             background-color: rgb(0, 0, 0);
             color: white;
         } 
+}
+
+/*boton carrito*/
+
+.botoncarrito {
+    background-color: darkslategrey;
+    margin-left: 50px;
+    border-radius: 10px;
+    cursor: pointer;
+    color: white;
+}
+    
+.botoncarrito:hover {
+    background-color: greenyellow;
+}
+
+/*iconos redes sociales - mapa*/
+
+.iconowpp {
+    position: fixed;
+    width: 55px;
+    height: 55px;
+    line-height: 55px;
+    bottom: 30px;
+    right: 30px;
+    color: white;
+    border-radius: 50px;
+    text-align: center;
+    font-size: 30px;
+    box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.3);
+    z-index: 100;
+}
+
+.iconowpp:hover{
+    text-decoration: none;
+    color: rgb(39, 204, 24);
+    background: white;
+}
+
+.iconins {
+    position: fixed;
+    width: 55px;
+    height: 55px;
+    line-height: 55px;
+    bottom: 120px;
+    right: 30px;
+    color: white;
+    border-radius: 50px;
+    text-align: center;
+    font-size: 30px;
+    box-shadow: 0px 1px 10px rgba(5, 5, 5, 0.3);
+    z-index: 100;
+}
+
+.iconfac {
+    position: fixed;
+    line-height: 55px;
+    bottom: 220px;
+    right: 30px;
+    color: white;
+    border-radius: 50px;
+    font-size: 30px;
+    box-shadow: 0px 1px 10px rgba(5, 5, 5, 0.3);
+    z-index: 100;
+}
+
+/*each - mapa*/
+
+$botonredes: (
+    wpp:rgb(39, 204, 24),
+    ins:rgb(0, 0, 0,),
+    fac:rgb(41, 43, 160)
+);
+
+@each $botonesredes, $color in $botonredes {
+    .icon#{botonesredes} {
+        background-color: $color;
+    }
+}
+
+/*Mapa GET*/
+
+$estilos: (
+    ancho: 55px,
+    alto: 55px,
+    texto: center,
+);
+
+.iconfac {
+    width: map-get($estilos, ancho);
+    height: map-get($estilos, alto);
+    text-align: map-get($estilos, texto);
 }
