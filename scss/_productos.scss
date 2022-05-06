@@ -45,6 +45,27 @@
     }
     }  
 }
+.text {
+    text-align: center;
+    color: white;
+}
+.contenedorproductosgrid {
+    display: grid;
+    grid-template-columns: 100%;
+    margin-left: 60px;
+    justify-items: center;
+}
+.contenedorhombre {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 10px;
+}
+.imagenproducto {
+    display: block;
+    margin: 0 auto;
+}
+
+/*card filtros*/
 
 .cardfiltros {
     width: 100%;
@@ -158,3 +179,237 @@ $estilos: (
     height: map-get($estilos, alto);
     text-align: map-get($estilos, texto);
 }
+
+/*Grid y mediaQ*/
+#gridpaghombre {
+    display: grid;
+    grid-template-areas:
+    "header header header"
+    "nav productos publicidad"
+    "footer footer footer";
+grid-template-rows: 120px 1fr 220px;
+grid-template-columns: 18% auto 10%;
+}
+header {
+    grid-area: header;
+}
+footer {
+    grid-area: footer;
+}
+section#productos {
+    grid-area: productos;
+}
+nav {
+    grid-area: nav;
+}
+aside {
+    grid-area: publicidad;
+}
+.lista h2 {
+    text-align: left;
+    width: 100%;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.precio label {
+    color: white;
+}
+.precio input {
+    border-radius: 5px;
+    width: 50px;
+}
+
+/*mediaQ*/
+
+@media (max-width: 545px) {
+    #gridpaghombre {
+        display: grid;
+    grid-template-areas:
+    "header"
+    "nav"
+    "productos"
+    "footer";
+    grid-template-rows: 180px 1000px 5700px 220px;
+    grid-template-columns: 100%;
+    }
+    .contenedorhombre{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 400px;
+        margin-right: 140px;
+    }
+    .border{
+        position: sticky;
+    }
+    .iconfac{
+        right: 15px;
+    }
+    .iconins{
+        right: 15px;
+    }
+    .iconowpp{
+        right: 15px;
+    }
+    @mixin cards {
+        background-color: black;
+        width: 55%;
+        height: 300px;
+        margin-bottom: 30px;
+        padding: 20px 5px;
+        margin-left: 10px;
+        border-style: solid;
+        border-radius: 10px;
+        border-color: white;
+        box-shadow: 2px 2px 8px rgba(182, 160, 38, 0.705);
+    }
+    
+    @for $i from 1 to 16 {
+        .card#{$i}{
+            @include cards;
+            &:hover{
+            transition: 2s;
+            transform: scale(1.1);
+        }
+        }  
+    }
+    .aside{
+        width: 20%;
+    }
+}
+
+@media (min-width: 545px) and (max-width: 767px){
+    #gridpaghombre {
+        display: grid;
+    grid-template-areas:
+    "header"
+    "nav productos"
+    "footer";
+    grid-template-rows: 180px 5900px 220px;
+    grid-template-columns: 10% 90%;
+    }
+    .contenedorhombre{
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        width: 380px;
+        justify-content: center;
+        align-items: center;
+        margin-left: 140px;
+    }
+    .border{
+        position: sticky;
+    }
+    .cardfiltros{
+        border-radius: 5px;
+        width: 200px;
+    }
+    .navegacion li {
+        font-size: 12px;
+    }
+    .navegacion ul {
+        padding-inline-start: 10px;
+    }
+    @mixin cards {
+        background-color: black;
+        width: 57%;
+        height: 300px;
+        margin-bottom: 30px;
+        padding: 20px 5px;
+        margin-left: 1px;
+        border-style: solid;
+        border-radius: 10px;
+        border-color: white;
+        box-shadow: 2px 2px 8px rgba(182, 160, 38, 0.705);
+    }
+    
+    @for $i from 1 to 16 {
+        .card#{$i}{
+            @include cards;
+            &:hover{
+            transition: 2s;
+            transform: scale(1.1);
+        }
+        }  
+    }
+
+}
+
+@media (min-width: 767px) and (max-width: 920px){
+    #gridpaghombre {
+        display: grid;
+    grid-template-areas:
+    "header"
+    "nav productos"
+    "footer";
+    grid-template-rows: 180px 3100px 220px;
+    grid-template-columns: 20% 80%;
+    }
+    .contenedorhombre{
+        display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1px;
+    width: 500px;
+    margin-right: 90px;
+    }
+    @mixin cards {
+        background-color: black;
+        width: 80%;
+        height: 300px;
+        margin-bottom: 30px;
+        padding: 20px 5px;
+        margin-left: 10px;
+        border-style: solid;
+        border-radius: 10px;
+        border-color: white;
+        box-shadow: 2px 2px 8px rgba(182, 160, 38, 0.705);
+    }
+    
+    @for $i from 1 to 16 {
+        .card#{$i}{
+            @include cards;
+            &:hover{
+            transition: 2s;
+            transform: scale(1.1);
+        }
+        }  
+    }
+    }
+    @media (min-width: 921px) and (max-width: 1220px){
+        #gridpaghombre {
+            display: grid;
+        grid-template-areas:
+        "header"
+        "nav productos"
+        "footer";
+        grid-template-rows: 180px 2000px 220px;
+        grid-template-columns: 20% 80%;
+        }
+        .contenedorhombre{
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            width: 500px;
+            margin-right: 220px;
+        }
+        @mixin cards {
+            background-color: black;
+            width: 88%;
+            height: 300px;
+            margin-bottom: 30px;
+            padding: 20px 5px;
+            margin-left: 10px;
+            border-style: solid;
+            border-radius: 10px;
+            border-color: white;
+            box-shadow: 2px 2px 8px rgba(182, 160, 38, 0.705);
+        }
+        
+        @for $i from 1 to 16 {
+            .card#{$i}{
+                @include cards;
+                &:hover{
+                transition: 2s;
+                transform: scale(1.1);
+            }
+            }  
+        }
+    }

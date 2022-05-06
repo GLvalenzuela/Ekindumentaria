@@ -1,0 +1,170 @@
+/*Barra inicio-header*/
+
+.colorfondo {
+    background-color: black;
+    position: fixed;
+    width: 100%;
+    margin-top: 0%;
+}
+.imagenzapatilla {
+    display:flex;
+    justify-content: center;
+}
+.letrasblancas {
+    text-decoration-color: aliceblue;
+    display: inline block;
+}
+ul{
+    list-style: none;
+    text-align: center;
+    margin-top: 0%;
+    font-family: Arial, Helvetica, sans-serif;
+}
+a {
+    color: rgb(238, 125, 32);
+    text-decoration: none;
+    padding: 10px;    
+}
+
+/*Estructura inicio*/
+
+.fondoiniciar h1 {
+    font-size: 50px; 
+    font-family: Arial, Helvetica, sans-serif;
+    color: orangered;
+}
+.fondoiniciar {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    background-color: rgb(47, 79, 79);
+    background-image: linear-gradient(to bottom, black, rgb(47, 79, 79));
+    background-size: cover;
+    background-attachment: fixed;
+    box-sizing: border-box;
+}
+
+/*Estructura Formulario iniciar*/
+
+.formulario {
+    background-color: aliceblue;
+    margin: auto;
+    padding: 3px;
+    width: 500px;
+    margin-top: 100px;
+    margin-bottom: 50px;
+    border-radius: 9px;
+}
+.tituloiniciar {
+    text-align: center;
+    color: darkslategrey;
+    font-size: 40px;
+}
+.contenedor {
+    width: 100%;
+    padding: 15px;
+    text-align: center;
+}
+.inputcontenedor {
+    margin-bottom: 15px;
+    border: 1px solid black;
+    font-size: 20px;
+    width: 90%;
+    padding: 10px;
+}
+.boton {
+    border: none;
+    width: 95%;
+    color: white;
+    font-size: 20px;
+    background-color: darkslategrey;
+    padding: 15px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+/*Grid y mediaQ*/
+#gridinicio {
+    display: grid;
+    grid-template-areas:
+    "header header header"
+    "nav nav anside"
+    "footer footer footer";
+grid-template-rows: 120px 700px 220px;
+grid-template-columns: 18% auto 10%;
+}
+header {
+    grid-area: header;
+}
+nav {
+    grid-area: nav;
+}
+aside {
+    grid-area: publicidad;
+}
+footer {
+    grid-area: footer;
+}
+
+/*MediaQ*/
+@media (max-width: 400px) {
+    #gridinicio {
+        display: grid;
+    grid-template-areas:
+    "header"
+    "nav"
+    "footer";
+    grid-template-rows: 120px 700px 220px;
+    grid-template-columns: 100%;
+    }
+    .flex { 
+        display: flex;
+        flex-direction: row;
+        height: 40px;
+    }
+    .navegacion {
+        display: flex;
+        flex-direction: row;
+        justify-content: left;
+        padding-left: 0%;
+    }
+    .navegacion li{
+        font-size: 6px;
+    }
+    .piedepag {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 5px;
+        background-color: black;
+    }
+    footer {
+        background-color: black;
+        width: 100%;
+        max-height: 100%;
+    }
+    .formulario {
+        width: 330px;
+        margin-left: 10px;
+    }
+    .border {
+    align-items: center;
+    }
+    .contenedor p{
+        font-size: 12px;
+    }
+    .contenedorpie2 {
+        margin-right: 140px;
+    }  
+}
+
+@media (min-width: 401px) and (max-width: 767px) {
+    #gridinicio {
+        display: grid;
+    grid-template-areas:
+    "header"
+    "nav"
+    "footer";
+    grid-template-rows: 120px 800px 620px;
+    grid-template-columns: 100%;
+}
+    }

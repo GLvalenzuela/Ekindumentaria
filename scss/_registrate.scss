@@ -1,0 +1,159 @@
+/*Grid y mediaQ*/
+#gridregistrate {
+    display: grid;
+    grid-template-areas:
+    "header header header"
+    "nav nav anside"
+    "footer footer footer";
+grid-template-rows: 120px 1000px 220px;
+grid-template-columns: 18% auto 10%;
+}
+header {
+    grid-area: header;
+}
+nav {
+    grid-area: nav;
+}
+aside {
+    grid-area: publicidad;
+}
+footer {
+    grid-area: footer;
+}
+/*MediaQ*/
+@media (max-width: 400px) {
+    #gridregistrate {
+        display: grid;
+    grid-template-areas:
+    "header"
+    "nav"
+    "footer";
+    grid-template-rows: 120px 900px 230px;
+    grid-template-columns: 100%;
+    }
+    .flex { 
+        display: flex;
+        flex-direction: row;
+        height: 100px;
+        justify-content: space-around;
+        padding: 0%;
+    }
+    .navegacion {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        font-size: 4px;
+    }
+    .piedepag {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        background-color: black;
+    }
+    footer {
+        background-color: black;
+        width: 100%;
+        max-height: 100%;
+    }
+    .formulario {
+        width: 350px;
+        margin-top: 30px;
+    }
+    .border {
+    align-items: center;
+}
+.inputcontenedor{
+    width: 90%;
+}
+.contenedor{
+    width: 94%;
+}
+.colorfondo{
+    height: 140px;
+}       
+}
+
+@media (min-width: 401px) and (max-width: 767px) {
+    #gridregistrate {
+        display: grid;
+    grid-template-areas:
+    "header"
+    "nav"
+    "footer";
+    grid-template-rows: 120px 1000px 620px;
+    grid-template-columns: 100%;
+}
+.formulario{
+    width: 360px;
+}
+.imagenzapatilla{
+    margin-left: 5px;
+}
+.navegacion li {
+    font-size: 10px;
+}
+.flex {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-left: 0px;
+}
+.contenedor p {
+    font-size: 15px;
+}
+.boton {
+    width: 90%;
+    margin-right: 18px;
+}
+.inputcontenedor{
+    width: 87%;
+}
+footer {
+    background-color: black;
+    width: 100%;
+    max-height: 100%;
+}
+.piedepag {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    background-color: black;
+}
+.contenedorpie1 {
+    margin-right: 250px;
+}
+.contenedorpie2 {
+    margin-right: 200px;
+}
+}
+
+@media (min-width: 768px) {
+    #gridregistrate {
+        display: grid;
+        grid-template-areas:
+        "header header header"
+        "nav nav anside"
+        "footer footer footer";
+    grid-template-rows: 120px 1000px 220px;
+    grid-template-columns: 100%;
+    }
+    .piedepag {
+        display: flex;
+        justify-content: space-between;
+    }
+    .contenedorpie1 {
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+    .contenedorpie2 {
+        margin-left: 5px;
+        margin-right: 10px;
+    }
+    .listapie li {
+    margin-bottom: 10px;
+    font-size: 15px;
+}
+}

@@ -1,0 +1,224 @@
+/*Imagenes Nosotros*/
+.containerimg4 {
+    width: 300px;
+    height: 300px;
+    overflow: hidden;
+    position: relative;
+    border-radius: 20px;
+    box-shadow: 5px 8px 12px black;
+    margin: auto;
+    display: inline-flex;
+    justify-content: space-between; 
+}
+.containerimg5 {
+    width: 400px;
+    height: 300px;
+    overflow: hidden;
+    position: relative;
+    border-radius: 20px;
+    box-shadow: 5px 8px 12px black;
+    margin: auto;
+    display: inline-flex;
+}  
+
+/*Texto Nosotros*/
+.historia p {
+    font-size: 20px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    color: rgb(255, 255, 255);
+}
+.historia h2 {
+    font-size: 30px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.nosotros {
+    display: flex;
+}
+.historia {
+    width: 100%;
+    height: 200px;
+    margin-bottom: 20px;
+}
+h1 {
+    color: rgb(241, 45, 45);
+    text-align: center;
+}
+/*Estructura Cuerpo*/
+.gridcontainer {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 400px 400px;
+    
+}
+
+/*Animaciones*/
+@keyframes aparecer {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+.historia h2 {
+    animation-name: aparecer;
+    animation-duration: 4s;
+    animation-iteration-count: initial;
+}
+.historia p {
+    animation-name: aparecer;
+    animation-duration: 6s;
+    animation-iteration-count: initial;
+}
+
+/*Grid y mediaQ*/
+#gridnosotros {
+    display: grid;
+    grid-template-areas: 
+    "header"
+    "body"
+    "footer";
+    grid-template-rows: 120px 1000px 220px;
+    grid-template-columns: 100%;
+}
+/*MediaQ*/
+@media (max-width: 400px) {
+    #gridnosotros {
+        display: grid;
+    grid-template-areas:
+    "header"
+    "body"
+    "footer";
+    grid-template-rows: 100px 1300px 220px;
+    }
+    .gridcontainer{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 30px;
+    }
+    .gridcontainer h2 {
+        font-size: 20px;
+        margin-top: 40px;
+    }
+    .gridcontainer p {
+        font-size: 12px;
+    }
+    .imagenzapatilla {
+        width: 150px;
+        height: 40px;
+        margin-left: 100px;
+    }
+    .navegacion{
+        font-size: 6px;
+    }
+    .flex {
+        display: flex;
+        flex-direction: row;
+    }
+    .fondosuperior {
+        height: 70px;
+    }
+    body h1{
+        font-size: 23px;
+        margin-top: 40px;
+    }
+    .containerimg5{
+        width: 300px;
+    }
+    .btn{
+        width: 13rem;
+    }
+}
+
+@media (min-width: 401px) and (max-width: 767px) {
+    #gridnosotros {
+        display: grid;
+    grid-template-areas:
+    "header"
+    "body"
+    "footer";
+    grid-template-rows: 100px 1500px 220px;
+    }
+    .gridcontainer{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 30px;
+    }
+    .gridcontainer h2 {
+        font-size: 30px;
+    }
+    .gridcontainer p {
+        font-size: 15px;
+    }
+    .containerimg5{
+        width: 300px;
+        height: 300px;
+    }
+    .containerimg4{
+        width: 300px;
+        height: 300px;
+        margin-top: 35px;
+    }
+    .containerimg4 img {
+        width: 300px; 
+    }
+    body h1{
+        font-size: 33px;
+        margin-top: 60px;
+    }
+    .imagenzapatilla {
+        width: 150px;
+        height: 60px;
+        margin-left: 38%;
+    }
+    .historia{
+        margin-top: 75px;
+    }
+    .fondosuperior{
+        width: 100%;
+        max-width: none;
+        height: 130px;
+    }
+    .btn{
+        width: 13rem;
+    }
+}
+
+
+@media (min-width: 768px) {
+    #gridnosotros {
+        display: grid;
+    grid-template-areas:
+    "header"
+    "body"
+    "footer";
+    }
+    body h1{
+        margin-top: 40px;
+    }
+    .historia{
+        margin-top: 40px;
+    }
+    .containerimg4{
+        margin-top: 120px;
+    }
+    .containerimg5{
+        margin-top: 120px;
+        width: 350px;
+    }
+    .containerimg5 img {
+        width: 350px;
+    }
+    body h1{
+        height: 80px;
+    }
+    .btn{
+        width: 13rem;
+    }
+    .fondosuperior{
+        width: 100%;
+        max-width: none;
+    }
+}
