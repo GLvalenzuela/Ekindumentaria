@@ -2227,7 +2227,9 @@ h1 {
     max-width: none;
     height: 130px; }
   .btn {
-    width: 13rem; } }
+    width: 13rem; }
+  .historia p {
+    font-size: 18px; } }
 
 @media (min-width: 768px) {
   #gridnosotros {
@@ -2250,4 +2252,6 @@ h1 {
     width: 13rem; }
   .fondosuperior {
     width: 100%;
-    max-width: none; } }
+    max-width: none; }
+  .historia p {
+    font-size: 18px; } }
